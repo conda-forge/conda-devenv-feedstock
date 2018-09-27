@@ -10,10 +10,10 @@ source:
   sha256: a0a88f7d482ec6293aee52a3026055e32a8719ec828f0496fc9b5c084c7ab33f
 
 build:
-  number: 0
+  number: 1
   script:
     - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
-    - python -m pip install . --no-deps --ignore-installed
+    - "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   entry_points:
     - conda-devenv = conda_devenv.devenv:main
   noarch: python
