@@ -1,5 +1,5 @@
 {% set name = "conda-devenv" %}
-{% set version = "1.0.4" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/ESSS/conda-devenv/archive/{{ version }}.tar.gz
-  sha256: a0a88f7d482ec6293aee52a3026055e32a8719ec828f0496fc9b5c084c7ab33f
+  sha256: 2b4736920ad183f3631c2fae1a1731fb65995f2f782bc1989984160e3d41ecbf
 
 build:
-  number: 2
+  number: 0
   script:
     - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
     - "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
