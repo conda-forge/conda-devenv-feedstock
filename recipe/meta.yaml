@@ -1,5 +1,5 @@
 {% set name = "conda-devenv" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ESSS/conda-devenv/archive/{{ version }}.tar.gz
-  sha256: f3f39a6a27e3d7962e30f92b5301f7c2a87d5333df5cdf8886c987b88b3f74e4
+  sha256: 85df2b5ab797d5c93c28df3a97ec3eabb5a901a63522cbf463c12f533cfe2ece
 
 build:
   number: 0

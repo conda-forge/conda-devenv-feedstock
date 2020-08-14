@@ -5,7 +5,7 @@ Home: https://github.com/ESSS/conda-devenv
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A tool to work with multiple projects in develop-mode using conda-env.
 
