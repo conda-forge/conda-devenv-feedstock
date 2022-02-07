@@ -1,5 +1,5 @@
 {% set name = "conda-devenv" %}
-{% set version = "2.1.1" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ESSS/conda-devenv/archive/{{ version }}.tar.gz
-  sha256: 85df2b5ab797d5c93c28df3a97ec3eabb5a901a63522cbf463c12f533cfe2ece
+  sha256: b8542839e8c5081a5ad2568534e1f7281f4b17cd0ba6ec448a4b05379ce4f2ea
 
 build:
   number: 0
@@ -25,10 +25,10 @@ requirements:
     - setuptools_scm
   run:
     - conda  >=4.3
+    - packaging
     - python >=3.6
     - jinja2
     - pyyaml
-    - six
 
 test:
   requires:
