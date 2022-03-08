@@ -16,6 +16,7 @@ build:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
     - conda-devenv = conda_devenv.devenv:main
+    - mamba-devenv = conda_devenv.devenv:mamba_main
   noarch: python
 
 requirements:
