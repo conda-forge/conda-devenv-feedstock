@@ -1,5 +1,5 @@
 {% set name = "conda-devenv" %}
-{% set version = "2.4.0" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ESSS/conda-devenv/archive/{{ version }}.tar.gz
-  sha256: 300697891a7a61e43af701cc67b2e4be49002b6c5fb591747664e4e2d2516cc2
+  sha256: 0cc3b0cebdb3a889f9df69c141c4f535c3e0125a0ba2431734487c750f3b8ae4
 
 build:
   number: 0
@@ -22,20 +22,22 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.10
     - setuptools_scm
   run:
-    - conda  >=4.3
-    - packaging
-    - python >=3.6
+    - colorama
+    - conda >=4.3
     - jinja2
+    - packaging
+    - python >=3.10
     - pyyaml
+    - typing_extensions
 
 test:
   requires:
-    - pytest >=3
-    - pytest-datadir >=1.0
+    - pytest-datadir >= 1.0
     - pytest-mock
+    - pytest-regressions
   imports:
     - conda_devenv
   commands:
