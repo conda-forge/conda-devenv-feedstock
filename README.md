@@ -151,7 +151,6 @@ Feedstock Maintainers
 * [@gcardozo123](https://github.com/gcardozo123/)
 * [@gqmelo](https://github.com/gqmelo/)
 * [@nicoddemus](https://github.com/nicoddemus/)
-* [@oliveira-mauricio](https://github.com/oliveira-mauricio/)
 * [@prusse-martin](https://github.com/prusse-martin/)
 * [@tadeu](https://github.com/tadeu/)
 
