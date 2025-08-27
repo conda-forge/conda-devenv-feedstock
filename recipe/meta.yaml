@@ -37,7 +37,7 @@ requirements:
 
 test:
   requires:
-    - pytest-datadir >= 1.0
+    - pytest-datadir >=1.0
     - pytest-mock
     - pytest-regressions
     - python {{ python_min }}
