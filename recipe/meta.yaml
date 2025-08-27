@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "conda-devenv" %}
-{% set version = "3.4.0" %}
+{% set version = "3.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/ESSS/conda-devenv/archive/{{ version }}.tar.gz
-  sha256: 07cb502e1cd880ccf396442d2fe2db1b7d6b44925fba5cc3cda3905a8952978f
+  sha256: bb95d7ecf63740183cdac54bab7462523cabf4479c08aec8edc7033da61c1dc3
 
 build:
-  number: 1
+  number: 0
   script:
     - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
